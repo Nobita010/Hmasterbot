@@ -5,7 +5,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Fil
 from telegram.ext.filters import Text
 
 # Constants
-ADMIN_UID = 'your_admin_uid'  # Replace with your Telegram user ID
+ADMIN_UID = '5976479963'  # Replace with your Telegram user ID
 USERS = set()
 
 # Define stages
@@ -72,7 +72,7 @@ async def admin(update: Update, context: CallbackContext):
         await update.message.reply_text("You are not authorized to use this command.")
 
 def main():
-    application = ApplicationBuilder().token('YOUR_TELEGRAM_BOT_TOKEN').build()
+    application = ApplicationBuilder().token('6719489487:AAFzVleCX-JJhoQBkvhAuynl1qvTGK9T9Ik').build()
 
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler("generate", generate)],
